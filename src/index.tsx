@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import { CounterApp } from './01-useState/CounterApp';
+import { CounterWithCustomHook } from './01-useState/CounterWithCustomHook';
+// import { CounterApp } from './01-useState/CounterApp';
 // import { HooksApp } from './HooksApp';
 
 const root = ReactDOM.createRoot(
@@ -11,7 +12,8 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     {/* <HooksApp /> */}
-    <CounterApp />
+    {/* <CounterApp /> */}
+    <CounterWithCustomHook/>
   </React.StrictMode>
 );
 
