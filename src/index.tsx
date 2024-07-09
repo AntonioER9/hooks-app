@@ -4,7 +4,9 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 // import { MultipleCustomHook } from './03-examples/MultipleCustomHook';
 // import { FormWithCustomHook } from './02-useEffect/FormWithCustomHook';
-import { FocusScreen } from './04-useRef/FocusScreen';
+// import { FocusScreen } from './04-useRef/FocusScreen';
+// import { Memorize } from './06-memos/Memorize';
+import { MemoHook } from './06-memos/MemoHook';
 // import { SimpleForm } from './02-useEffect/SimpleForm';
 // import { CounterWithCustomHook } from './01-useState/CounterWithCustomHook';
 // import { CounterApp } from './01-useState/CounterApp';
@@ -20,7 +22,9 @@ root.render(
     {/* <CounterWithCustomHook/> */}
     {/* <SimpleForm/> */}
     {/* <FormWithCustomHook/> */}
-    <FocusScreen/>
+    {/* <FocusScreen/> */}
+    {/* <Memorize/> */}
+    <MemoHook/>
     {/* <MultipleCustomHook/> */}
   </React.StrictMode>
 );
