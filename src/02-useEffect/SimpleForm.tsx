@@ -52,7 +52,7 @@ export const SimpleForm = () => {
       <input
         type="email"
         className="form-control mt-2"
-        placeholder="fernando@google.com"
+        placeholder="antonio@google.com"
         name="email"
         value={email}
         onChange={onInputChange}
