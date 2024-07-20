@@ -2,12 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from 'react-router-dom';
+
 // import { MultipleCustomHook } from './03-examples/MultipleCustomHook';
 // import { FormWithCustomHook } from './02-useEffect/FormWithCustomHook';
 // import { FocusScreen } from './04-useRef/FocusScreen';
 // import { Memorize } from './06-memos/Memorize';
 // import { MemoHook } from './06-memos/MemoHook';
-import { CallbackHook } from './06-memos/CallbackHook';
+// import { CallbackHook } from './06-memos/CallbackHook';
+import { MainApp } from './09-useContext/MainApp';
 // import { SimpleForm } from './02-useEffect/SimpleForm';
 // import { CounterWithCustomHook } from './01-useState/CounterWithCustomHook';
 // import { CounterApp } from './01-useState/CounterApp';
@@ -17,18 +20,21 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-  <React.StrictMode>
-    {/* <HooksApp /> */}
-    {/* <CounterApp /> */}
-    {/* <CounterWithCustomHook/> */}
-    {/* <SimpleForm/> */}
-    {/* <FormWithCustomHook/> */}
-    {/* <FocusScreen/> */}
-    {/* <Memorize/> */}
-    {/* <MemoHook/> */}
-    <CallbackHook/>
-    {/* <MultipleCustomHook/> */}
-  </React.StrictMode>
+  <BrowserRouter>
+    <React.StrictMode>
+      {/* <HooksApp /> */}
+      {/* <CounterApp /> */}
+      {/* <CounterWithCustomHook/> */}
+      {/* <SimpleForm/> */}
+      {/* <FormWithCustomHook/> */}
+      {/* <FocusScreen/> */}
+      {/* <Memorize/> */}
+      {/* <MemoHook/> */}
+      {/* <CallbackHook/> */}
+      <MainApp />
+      {/* <MultipleCustomHook/> */}
+    </React.StrictMode>
+  </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function
