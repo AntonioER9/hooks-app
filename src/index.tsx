@@ -10,7 +10,8 @@ import { BrowserRouter } from 'react-router-dom';
 // import { Memorize } from './06-memos/Memorize';
 // import { MemoHook } from './06-memos/MemoHook';
 // import { CallbackHook } from './06-memos/CallbackHook';
-import { MainApp } from './09-useContext/MainApp';
+// import { MainApp } from './09-useContext/MainApp';
+import { TodoApp } from './08-useReducer/TodoApp';
 // import { SimpleForm } from './02-useEffect/SimpleForm';
 // import { CounterWithCustomHook } from './01-useState/CounterWithCustomHook';
 // import { CounterApp } from './01-useState/CounterApp';
@@ -31,7 +32,8 @@ root.render(
       {/* <Memorize/> */}
       {/* <MemoHook/> */}
       {/* <CallbackHook/> */}
-      <MainApp />
+      {/* <MainApp /> */}
+      <TodoApp/>
       {/* <MultipleCustomHook/> */}
     </React.StrictMode>
   </BrowserRouter>
