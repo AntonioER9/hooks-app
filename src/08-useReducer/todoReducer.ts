@@ -2,8 +2,8 @@ import { Todo } from './interfaces';
 
 type TodoAction =
     | { type: '[TODO] Add Todo', payload: Todo }
-    | { type: '[TODO] Toggle Todo', id: string  }
-    | { type: '[TODO] Remove Todo', id: string  };
+    | { type: '[TODO] Toggle Todo', payload: { id: string } }
+    | { type: '[TODO] Remove Todo', payload: { id: string } };
 
 export const todoReducer = (initialState: Todo[] = [], action: TodoAction): Todo[] => {
 
@@ -13,12 +13,12 @@ export const todoReducer = (initialState: Todo[] = [], action: TodoAction): Todo
 
 
         case '[TODO] Remove Todo':
-            return initialState.filter( todo => todo.id !== action.id );
+            return initialState.filter( todo => todo.id !== action.payload.id );
 
         case '[TODO] Toggle Todo':
             return initialState.map( todo => {
 
-                if ( todo.id === action.id ) {// id
+                if ( todo.id === action.payload.id ) {
                     return {
                         ...todo,
                         completed: !todo.completed
